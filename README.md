@@ -166,5 +166,63 @@ Run the binary and simply wait for it to iterate through all possible number com
 
 ![captureq2_21](https://cloud.githubusercontent.com/assets/12239510/7900715/5fc46680-0784-11e5-8fb5-664d9d6465ec.JPG)
 
+----------
+
+##Question 3##
+
+**A.**
+
+**a)** the /etc/passwd file? used to change the user password in UNIX like environments.
+
+**b)** the /etc/shadow file? stores the encrypted password and other details such as account & password expiration times.
+
+**c)** the setuid bit? set user id upon execution. these are access rights flags it contains the owner , group , user execution permissions.
+
+**d)** chroot? a command that changes apparent root directory
+
+**B.** *lsattr* command lists the file attributes on a second extended file system and *ls -l* shows the long listing information about the file or directory
+
+**C.** Android system implements the principle of least privilege. This means that each app, by default, has access to only the components that it requires to do its work and no more. The granularity of control that the OS has over privileges of an individual process is limited. In practice it is very difficult to  control a process's access to memory, processing time, I/O device addresses or modes with the precision needed to facilitate only the precise set of privileges a process will require.
+
+**D.** Access control lists provides an additional, more flexible permission mechanism for file systems. ACL allows you to give permissions for any user or group to any disc resource. It is designed to assist with unix file permissions.
+In standard unix permission models, the ownership of the files is an important component. Access to the files  and read, write, execute permission depends on the permissions given by the owner or group. 
+
+**E.** *ruid* is used to identify who the user is actually. once it is setup by the system, it cannot be changed till your session terminates. Users cannot change the ruid. only the root can change it.
+*euid* is used to determine what level of access the current process has. when the euid is zero then the process has unlimited access
+
+**F.** In a unix system, Syslog file provides information about the activities of the machine, such as the user activity and history.IF the attacker clears this file, the illegal activities cannot be discovered.
+
+Altering accounting files in unix is another method of covering tracks. utmp, wtmp, and lastlog files are the main accounting files in unix
 
 ----------
+
+##Question 4##
+**A.** mov DWORD PTR [ebp-0x4], 0x8
+moves the memory address 0x8 into the location pointed to by EBP, such as pushing a value onto the stack so we can work with it.
+
+**B.** mov eax, DWORD PTR [ebp+0x8]
+moves value at epb+0x8 into EAX 
+
+**C.** lea eax, [ecx + eax*1]
+the quantity ecx+eax*1 is placed in EAX
+
+**D.** call _htons
+call _htons function - call puts the address of the next instruction on the stack  so the program can return to it
+
+**E.** cmp [ebp+0x8], 0
+compare the values of the two operands ebp+0x8 and 0
+
+----------
+
+##Question 5##
+Make both Kali Linux and Vulnix Host only.
+
+![captureq5_1](https://cloud.githubusercontent.com/assets/12239510/7900939/3c8a935a-078f-11e5-8c76-ea2eb04bbf0f.jpg)
+
+Then do a netdiscover to find it IP addresses.
+
+![captureq5_2](https://cloud.githubusercontent.com/assets/12239510/7900940/3c993202-078f-11e5-978a-e9b6d1db934e.jpg)
+
+![captureq5_3](https://cloud.githubusercontent.com/assets/12239510/7900941/3c9d094a-078f-11e5-9c80-0a2376505659.jpg)
+
+![captureq5_4](https://cloud.githubusercontent.com/assets/12239510/7900942/3caaca26-078f-11e5-9cea-85fa4e235ce3.jpg)
