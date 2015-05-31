@@ -215,6 +215,9 @@ compare the values of the two operands ebp+0x8 and 0
 ----------
 
 ##Question 5##
+
+![captureq5](https://cloud.githubusercontent.com/assets/12239510/7900951/0db5ae6a-0790-11e5-875f-6e862e26e4ad.png)
+
 Make both Kali Linux and Vulnix Host only.
 
 ![captureq5_1](https://cloud.githubusercontent.com/assets/12239510/7900939/3c8a935a-078f-11e5-8c76-ea2eb04bbf0f.jpg)
